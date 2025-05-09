@@ -183,8 +183,9 @@ def plot_spectrogram_to_numpy(spectrogram):
     plt.tight_layout()
 
     fig.canvas.draw()
-    data = np.fromstring(fig.canvas.tostring_rgb(), dtype=np.uint8, sep="")
-    data = data.reshape(fig.canvas.get_width_height()[::-1] + (3,))
+    data = np.frombuffer(fig.canvas.buffer_rgba(), dtype=np.uint8)
+    data = data.reshape(fig.canvas.get_width_height()[::-1] + (4,))
+    data = data[:, :, :3]  # Convert RGBA to RGB
     plt.close()
     return data
 
@@ -214,8 +215,9 @@ def plot_alignment_to_numpy(alignment, info=None):
     plt.tight_layout()
 
     fig.canvas.draw()
-    data = np.fromstring(fig.canvas.tostring_rgb(), dtype=np.uint8, sep="")
-    data = data.reshape(fig.canvas.get_width_height()[::-1] + (3,))
+    data = np.frombuffer(fig.canvas.buffer_rgba(), dtype=np.uint8)
+    data = data.reshape(fig.canvas.get_width_height()[::-1] + (4,))
+    data = data[:, :, :3]  # Convert RGBA to RGB
     plt.close()
     return data
 
@@ -231,14 +233,51 @@ def load_wav_to_torch_new(full_path):
     return audio_norm, sampling_rate
 
 def load_wav_to_torch_librosa(full_path, sr):
-    audio_norm, sampling_rate = librosa.load(full_path, sr=sr, mono=True)
-    return torch.FloatTensor(audio_norm.astype(np.float32)), sampling_rate
+    try:
+        # Ensure path uses proper OS-specific format
+        full_path = os.path.normpath(full_path)
+        
+        # Try loading the audio file
+        audio_norm, sampling_rate = librosa.load(full_path, sr=sr, mono=True)
+        return torch.FloatTensor(audio_norm.astype(np.float32)), sampling_rate
+    except Exception as e:
+        # Try alternate path formats if the file can't be loaded
+        try:
+            # Get base filename and try with project root
+            base_name = os.path.basename(full_path)
+            project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            
+            # Try searching for the file
+            for root, _, files in os.walk(project_dir):
+                if base_name in files:
+                    alt_path = os.path.join(root, base_name)
+                    print(f"Found audio file at alternate path: {alt_path}")
+                    audio_norm, sampling_rate = librosa.load(alt_path, sr=sr, mono=True)
+                    return torch.FloatTensor(audio_norm.astype(np.float32)), sampling_rate
+            
+            # If we couldn't find it, raise the original error
+            raise e
+        except:
+            # Re-raise the original error
+            raise e
 
 
 def load_filepaths_and_text(filename, split="|"):
-    with open(filename, encoding="utf-8") as f:
-        filepaths_and_text = [line.strip().split(split) for line in f]
-    return filepaths_and_text
+    try:
+        print(f"Opening list file: {filename}")
+        with open(filename, encoding="utf-8") as f:
+            filepaths_and_text = []
+            for line in f:
+                parts = line.strip().split(split)
+                if len(parts) > 0:
+                    # Convert path to OS-specific format
+                    parts[0] = os.path.normpath(parts[0])
+                filepaths_and_text.append(parts)
+        print(f"Loaded {len(filepaths_and_text)} entries from {filename}")
+        return filepaths_and_text
+    except Exception as e:
+        print(f"Error loading {filename}: {str(e)}")
+        raise
 
 
 def get_hparams(init=True):
