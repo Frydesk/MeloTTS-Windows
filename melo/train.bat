@@ -1,6 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
+
 :: Set the relative path to the config file as a parameter
 set "RELATIVE_CONFIG_PATH=data\example\config.json"
 
