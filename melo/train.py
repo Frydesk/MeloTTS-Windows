@@ -6,6 +6,17 @@ from torch.utils.tensorboard import SummaryWriter
 from torch.cuda.amp import autocast, GradScaler
 from tqdm import tqdm
 import logging
+import sys
+
+# Configure logging to handle Unicode
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s\t%(name)s\t%(levelname)s\t%(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler('train.log', encoding='utf-8')
+    ]
+)
 
 logging.getLogger("numba").setLevel(logging.WARNING)
 import commons
@@ -106,6 +117,8 @@ def run():
         )
 
     pretrain_G, pretrain_D, pretrain_dur = load_pretrain_model()
+    # You can manually set the pretrain_G path here, for example:
+    # hps.pretrain_G = "path/to/your/G.pth"
     hps.pretrain_G = hps.pretrain_G or pretrain_G
     hps.pretrain_D = hps.pretrain_D or pretrain_D
     hps.pretrain_dur = hps.pretrain_dur or pretrain_dur

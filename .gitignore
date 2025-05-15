@@ -9,3 +9,5 @@ build/
 
 *.zip
 *.wav
+
+melo/data/example
