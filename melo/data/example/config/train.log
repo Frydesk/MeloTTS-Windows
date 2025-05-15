@@ -1,0 +1,270 @@
+2025-05-09 04:48:10,386	config	WARNING	C:\Users\User\Documents\GitHub\MeloTTS-Windows\melo is not a git repository, therefore hash value comparison will be ignored.
+2025-05-09 04:48:10,390	config	INFO	Training files path: data\example\train.list
+2025-05-09 04:48:10,390	config	INFO	Validation files path: data\example\val.list
+2025-05-09 04:48:10,390	config	INFO	Current working directory: C:\Users\User\Documents\GitHub\MeloTTS-Windows\melo
+2025-05-09 04:48:41,728	config	ERROR	enc_p.language_emb.weight is not in the checkpoint
+2025-05-09 04:48:41,728	config	ERROR	emb_g.weight is not in the checkpoint
+2025-05-09 04:48:41,877	config	INFO	Loaded checkpoint 'C:\Users\User\.cache\cached_path\73ad3d5a37c82356ed81630b0a435b4b376ca49523854fe2b8302609fd71c193.133b77b9d9162e348486a0a0778fa47d726930e3ec12ea5e2684c0c919743a65' (iteration 0)
+2025-05-09 04:48:42,006	config	INFO	Loaded checkpoint 'C:\Users\User\.cache\cached_path\c3d3c787a8711093a79ee95f091a35de75e527b6e8e28424ad7010f6e86cce58.e5f88bb1eca17c37beb511b15a932e84fdc8b66d8a8d5c5075334650425954f2' (iteration 0)
+2025-05-09 04:48:42,028	config	INFO	Loaded checkpoint 'C:\Users\User\.cache\cached_path\c7b373ab8939eb672a985a802d21420534ca0cd43fa4aecf4fa6088a569ee2a1.ce7a8153914d9727ebc28e4b4e3d31eed35aa0b4e3d125eb54e6f8363968dd7a' (iteration 0)
+2025-05-09 04:48:58,307	config	INFO	Train Epoch: 1 [0%]
+2025-05-09 04:48:58,309	config	INFO	[2.786968231201172, 3.3345868587493896, 10.591113090515137, 24.00982093811035, 8.148809432983398, 9.216923713684082, 0, 0.0003]
+2025-05-09 04:51:37,737	config	WARNING	C:\Users\User\Documents\GitHub\MeloTTS-Windows\melo is not a git repository, therefore hash value comparison will be ignored.
+2025-05-09 04:51:37,742	config	INFO	Training files path: data\example\train.list
+2025-05-09 04:51:37,742	config	INFO	Validation files path: data\example\val.list
+2025-05-09 04:51:37,742	config	INFO	Current working directory: C:\Users\User\Documents\GitHub\MeloTTS-Windows\melo
+2025-05-09 04:51:43,087	config	ERROR	enc_p.language_emb.weight is not in the checkpoint
+2025-05-09 04:51:43,088	config	ERROR	emb_g.weight is not in the checkpoint
+2025-05-09 04:51:43,169	config	INFO	Loaded checkpoint 'C:\Users\User\.cache\cached_path\73ad3d5a37c82356ed81630b0a435b4b376ca49523854fe2b8302609fd71c193.133b77b9d9162e348486a0a0778fa47d726930e3ec12ea5e2684c0c919743a65' (iteration 0)
+2025-05-09 04:51:43,259	config	INFO	Loaded checkpoint 'C:\Users\User\.cache\cached_path\c3d3c787a8711093a79ee95f091a35de75e527b6e8e28424ad7010f6e86cce58.e5f88bb1eca17c37beb511b15a932e84fdc8b66d8a8d5c5075334650425954f2' (iteration 0)
+2025-05-09 04:51:43,264	config	INFO	Loaded checkpoint 'C:\Users\User\.cache\cached_path\c7b373ab8939eb672a985a802d21420534ca0cd43fa4aecf4fa6088a569ee2a1.ce7a8153914d9727ebc28e4b4e3d31eed35aa0b4e3d125eb54e6f8363968dd7a' (iteration 0)
+2025-05-09 04:52:00,864	config	INFO	Train Epoch: 1 [0%]
+2025-05-09 04:52:00,865	config	INFO	[2.7871146202087402, 3.3318777084350586, 10.587387084960938, 24.010738372802734, 8.148796081542969, 9.216553688049316, 0, 0.0003]
+2025-05-09 04:52:57,377	config	WARNING	C:\Users\User\Documents\GitHub\MeloTTS-Windows\melo is not a git repository, therefore hash value comparison will be ignored.
+2025-05-09 04:52:57,381	config	INFO	Training files path: data\example\train.list
+2025-05-09 04:52:57,381	config	INFO	Validation files path: data\example\val.list
+2025-05-09 04:52:57,381	config	INFO	Current working directory: C:\Users\User\Documents\GitHub\MeloTTS-Windows\melo
+2025-05-09 04:53:00,690	config	ERROR	enc_p.language_emb.weight is not in the checkpoint
+2025-05-09 04:53:00,690	config	ERROR	emb_g.weight is not in the checkpoint
+2025-05-09 04:53:00,771	config	INFO	Loaded checkpoint 'C:\Users\User\.cache\cached_path\73ad3d5a37c82356ed81630b0a435b4b376ca49523854fe2b8302609fd71c193.133b77b9d9162e348486a0a0778fa47d726930e3ec12ea5e2684c0c919743a65' (iteration 0)
+2025-05-09 04:53:00,863	config	INFO	Loaded checkpoint 'C:\Users\User\.cache\cached_path\c3d3c787a8711093a79ee95f091a35de75e527b6e8e28424ad7010f6e86cce58.e5f88bb1eca17c37beb511b15a932e84fdc8b66d8a8d5c5075334650425954f2' (iteration 0)
+2025-05-09 04:53:00,868	config	INFO	Loaded checkpoint 'C:\Users\User\.cache\cached_path\c7b373ab8939eb672a985a802d21420534ca0cd43fa4aecf4fa6088a569ee2a1.ce7a8153914d9727ebc28e4b4e3d31eed35aa0b4e3d125eb54e6f8363968dd7a' (iteration 0)
+2025-05-09 04:53:15,878	config	INFO	Train Epoch: 1 [0%]
+2025-05-09 04:53:15,879	config	INFO	[2.787194013595581, 3.330890417098999, 10.587418556213379, 24.010324478149414, 8.135444641113281, 9.216548919677734, 0, 0.0003]
+2025-05-09 04:53:34,600	config	INFO	Saving model and optimizer state at iteration 1 to C:\Users\User\Documents\GitHub\MeloTTS-Windows\melo\data\example\config\G_0.pth
+2025-05-09 04:53:37,016	config	INFO	Saving model and optimizer state at iteration 1 to C:\Users\User\Documents\GitHub\MeloTTS-Windows\melo\data\example\config\D_0.pth
+2025-05-09 04:53:37,466	config	INFO	Saving model and optimizer state at iteration 1 to C:\Users\User\Documents\GitHub\MeloTTS-Windows\melo\data\example\config\DUR_0.pth
+2025-05-09 04:53:37,487	config	INFO	====> Epoch: 1
+2025-05-09 04:53:38,234	config	INFO	====> Epoch: 2
+2025-05-09 04:53:38,877	config	INFO	====> Epoch: 3
+2025-05-09 04:53:39,520	config	INFO	====> Epoch: 4
+2025-05-09 04:53:40,179	config	INFO	====> Epoch: 5
+2025-05-09 04:53:40,857	config	INFO	====> Epoch: 6
+2025-05-09 04:53:41,511	config	INFO	====> Epoch: 7
+2025-05-09 04:53:42,181	config	INFO	====> Epoch: 8
+2025-05-09 04:53:42,846	config	INFO	====> Epoch: 9
+2025-05-09 04:53:43,529	config	INFO	====> Epoch: 10
+2025-05-09 04:53:44,217	config	INFO	====> Epoch: 11
+2025-05-09 04:53:44,882	config	INFO	====> Epoch: 12
+2025-05-09 04:53:45,579	config	INFO	====> Epoch: 13
+2025-05-09 04:53:46,257	config	INFO	====> Epoch: 14
+2025-05-09 04:53:46,927	config	INFO	====> Epoch: 15
+2025-05-09 04:53:47,612	config	INFO	====> Epoch: 16
+2025-05-09 04:53:48,299	config	INFO	====> Epoch: 17
+2025-05-09 04:53:48,979	config	INFO	====> Epoch: 18
+2025-05-09 04:53:49,633	config	INFO	====> Epoch: 19
+2025-05-09 04:53:50,295	config	INFO	====> Epoch: 20
+2025-05-09 04:53:50,975	config	INFO	====> Epoch: 21
+2025-05-09 04:53:51,638	config	INFO	====> Epoch: 22
+2025-05-09 04:53:52,311	config	INFO	====> Epoch: 23
+2025-05-09 04:53:52,964	config	INFO	====> Epoch: 24
+2025-05-09 04:53:53,611	config	INFO	====> Epoch: 25
+2025-05-09 04:53:54,271	config	INFO	====> Epoch: 26
+2025-05-09 04:53:54,913	config	INFO	====> Epoch: 27
+2025-05-09 04:53:55,571	config	INFO	====> Epoch: 28
+2025-05-09 04:53:56,259	config	INFO	====> Epoch: 29
+2025-05-09 04:53:56,913	config	INFO	====> Epoch: 30
+2025-05-09 04:53:57,590	config	INFO	====> Epoch: 31
+2025-05-09 04:53:58,272	config	INFO	====> Epoch: 32
+2025-05-09 04:53:58,948	config	INFO	====> Epoch: 33
+2025-05-09 04:53:59,638	config	INFO	====> Epoch: 34
+2025-05-09 04:54:00,294	config	INFO	====> Epoch: 35
+2025-05-09 04:54:00,988	config	INFO	====> Epoch: 36
+2025-05-09 04:54:01,689	config	INFO	====> Epoch: 37
+2025-05-09 04:54:02,383	config	INFO	====> Epoch: 38
+2025-05-09 04:54:03,076	config	INFO	====> Epoch: 39
+2025-05-09 04:54:03,742	config	INFO	====> Epoch: 40
+2025-05-09 04:54:04,396	config	INFO	====> Epoch: 41
+2025-05-09 04:54:05,067	config	INFO	====> Epoch: 42
+2025-05-09 04:54:05,832	config	INFO	====> Epoch: 43
+2025-05-09 04:54:06,535	config	INFO	====> Epoch: 44
+2025-05-09 04:54:07,219	config	INFO	====> Epoch: 45
+2025-05-09 04:54:07,888	config	INFO	====> Epoch: 46
+2025-05-09 04:54:08,548	config	INFO	====> Epoch: 47
+2025-05-09 04:54:09,240	config	INFO	====> Epoch: 48
+2025-05-09 04:54:09,994	config	INFO	====> Epoch: 49
+2025-05-09 04:54:10,717	config	INFO	====> Epoch: 50
+2025-05-09 04:54:11,449	config	INFO	====> Epoch: 51
+2025-05-09 04:54:12,168	config	INFO	====> Epoch: 52
+2025-05-09 04:54:12,906	config	INFO	====> Epoch: 53
+2025-05-09 04:54:13,598	config	INFO	====> Epoch: 54
+2025-05-09 04:54:14,330	config	INFO	====> Epoch: 55
+2025-05-09 04:54:15,048	config	INFO	====> Epoch: 56
+2025-05-09 04:54:15,757	config	INFO	====> Epoch: 57
+2025-05-09 04:54:16,506	config	INFO	====> Epoch: 58
+2025-05-09 04:54:17,211	config	INFO	====> Epoch: 59
+2025-05-09 04:54:17,917	config	INFO	====> Epoch: 60
+2025-05-09 04:54:18,623	config	INFO	====> Epoch: 61
+2025-05-09 04:54:19,353	config	INFO	====> Epoch: 62
+2025-05-09 04:54:20,090	config	INFO	====> Epoch: 63
+2025-05-09 04:54:20,853	config	INFO	====> Epoch: 64
+2025-05-09 04:54:21,587	config	INFO	====> Epoch: 65
+2025-05-09 04:54:22,325	config	INFO	====> Epoch: 66
+2025-05-09 04:54:23,029	config	INFO	====> Epoch: 67
+2025-05-09 04:54:23,718	config	INFO	====> Epoch: 68
+2025-05-09 04:54:24,420	config	INFO	====> Epoch: 69
+2025-05-09 04:54:25,129	config	INFO	====> Epoch: 70
+2025-05-09 04:54:25,860	config	INFO	====> Epoch: 71
+2025-05-09 04:54:26,600	config	INFO	====> Epoch: 72
+2025-05-09 04:54:27,338	config	INFO	====> Epoch: 73
+2025-05-09 04:54:28,039	config	INFO	====> Epoch: 74
+2025-05-09 04:54:28,753	config	INFO	====> Epoch: 75
+2025-05-09 04:54:29,446	config	INFO	====> Epoch: 76
+2025-05-09 04:54:30,166	config	INFO	====> Epoch: 77
+2025-05-09 04:54:30,882	config	INFO	====> Epoch: 78
+2025-05-09 04:54:31,595	config	INFO	====> Epoch: 79
+2025-05-09 04:54:32,300	config	INFO	====> Epoch: 80
+2025-05-09 04:54:33,008	config	INFO	====> Epoch: 81
+2025-05-09 04:54:33,729	config	INFO	====> Epoch: 82
+2025-05-09 04:54:34,445	config	INFO	====> Epoch: 83
+2025-05-09 04:54:35,132	config	INFO	====> Epoch: 84
+2025-05-09 04:54:35,858	config	INFO	====> Epoch: 85
+2025-05-09 04:54:36,583	config	INFO	====> Epoch: 86
+2025-05-09 04:54:37,316	config	INFO	====> Epoch: 87
+2025-05-09 04:54:38,011	config	INFO	====> Epoch: 88
+2025-05-09 04:54:38,735	config	INFO	====> Epoch: 89
+2025-05-09 04:54:39,450	config	INFO	====> Epoch: 90
+2025-05-09 04:54:40,182	config	INFO	====> Epoch: 91
+2025-05-09 04:54:40,896	config	INFO	====> Epoch: 92
+2025-05-09 04:54:41,628	config	INFO	====> Epoch: 93
+2025-05-09 04:54:42,356	config	INFO	====> Epoch: 94
+2025-05-09 04:54:43,071	config	INFO	====> Epoch: 95
+2025-05-09 04:54:43,804	config	INFO	====> Epoch: 96
+2025-05-09 04:54:44,534	config	INFO	====> Epoch: 97
+2025-05-09 04:54:45,261	config	INFO	====> Epoch: 98
+2025-05-09 04:54:45,965	config	INFO	====> Epoch: 99
+2025-05-09 04:54:46,663	config	INFO	====> Epoch: 100
+2025-05-09 04:54:47,365	config	INFO	====> Epoch: 101
+2025-05-09 04:54:48,070	config	INFO	====> Epoch: 102
+2025-05-09 04:54:48,790	config	INFO	====> Epoch: 103
+2025-05-09 04:54:49,518	config	INFO	====> Epoch: 104
+2025-05-09 04:54:50,244	config	INFO	====> Epoch: 105
+2025-05-09 04:54:50,995	config	INFO	====> Epoch: 106
+2025-05-09 04:54:51,730	config	INFO	====> Epoch: 107
+2025-05-09 04:54:52,455	config	INFO	====> Epoch: 108
+2025-05-09 04:54:53,187	config	INFO	====> Epoch: 109
+2025-05-09 04:54:53,927	config	INFO	====> Epoch: 110
+2025-05-09 04:54:54,681	config	INFO	====> Epoch: 111
+2025-05-09 04:54:55,418	config	INFO	====> Epoch: 112
+2025-05-09 04:54:56,127	config	INFO	====> Epoch: 113
+2025-05-09 04:54:56,850	config	INFO	====> Epoch: 114
+2025-05-09 04:54:57,563	config	INFO	====> Epoch: 115
+2025-05-09 04:54:58,306	config	INFO	====> Epoch: 116
+2025-05-09 04:54:59,016	config	INFO	====> Epoch: 117
+2025-05-09 04:54:59,746	config	INFO	====> Epoch: 118
+2025-05-09 04:55:00,461	config	INFO	====> Epoch: 119
+2025-05-09 04:55:01,186	config	INFO	====> Epoch: 120
+2025-05-09 04:55:01,886	config	INFO	====> Epoch: 121
+2025-05-09 04:55:02,626	config	INFO	====> Epoch: 122
+2025-05-09 04:55:03,354	config	INFO	====> Epoch: 123
+2025-05-09 04:55:04,083	config	INFO	====> Epoch: 124
+2025-05-09 04:55:04,790	config	INFO	====> Epoch: 125
+2025-05-09 04:55:05,502	config	INFO	====> Epoch: 126
+2025-05-09 04:55:06,188	config	INFO	====> Epoch: 127
+2025-05-09 04:55:06,898	config	INFO	====> Epoch: 128
+2025-05-09 04:55:07,604	config	INFO	====> Epoch: 129
+2025-05-09 04:55:08,349	config	INFO	====> Epoch: 130
+2025-05-09 04:55:09,079	config	INFO	====> Epoch: 131
+2025-05-09 04:55:09,783	config	INFO	====> Epoch: 132
+2025-05-09 04:55:10,515	config	INFO	====> Epoch: 133
+2025-05-09 04:55:11,221	config	INFO	====> Epoch: 134
+2025-05-09 04:55:11,960	config	INFO	====> Epoch: 135
+2025-05-09 04:55:12,680	config	INFO	====> Epoch: 136
+2025-05-09 04:55:13,393	config	INFO	====> Epoch: 137
+2025-05-09 04:55:14,101	config	INFO	====> Epoch: 138
+2025-05-09 04:55:14,810	config	INFO	====> Epoch: 139
+2025-05-09 04:55:15,516	config	INFO	====> Epoch: 140
+2025-05-09 04:55:16,244	config	INFO	====> Epoch: 141
+2025-05-09 04:55:16,984	config	INFO	====> Epoch: 142
+2025-05-09 04:55:17,713	config	INFO	====> Epoch: 143
+2025-05-09 04:55:18,462	config	INFO	====> Epoch: 144
+2025-05-09 04:55:19,244	config	INFO	====> Epoch: 145
+2025-05-09 04:55:20,019	config	INFO	====> Epoch: 146
+2025-05-09 04:55:20,791	config	INFO	====> Epoch: 147
+2025-05-09 04:55:21,525	config	INFO	====> Epoch: 148
+2025-05-09 04:55:22,281	config	INFO	====> Epoch: 149
+2025-05-09 04:55:23,051	config	INFO	====> Epoch: 150
+2025-05-09 04:55:23,815	config	INFO	====> Epoch: 151
+2025-05-09 04:55:24,603	config	INFO	====> Epoch: 152
+2025-05-09 04:55:25,380	config	INFO	====> Epoch: 153
+2025-05-09 04:55:26,144	config	INFO	====> Epoch: 154
+2025-05-09 04:55:26,920	config	INFO	====> Epoch: 155
+2025-05-09 04:55:27,711	config	INFO	====> Epoch: 156
+2025-05-09 04:55:28,518	config	INFO	====> Epoch: 157
+2025-05-09 04:55:29,325	config	INFO	====> Epoch: 158
+2025-05-09 04:55:30,143	config	INFO	====> Epoch: 159
+2025-05-09 04:55:30,912	config	INFO	====> Epoch: 160
+2025-05-09 04:55:31,690	config	INFO	====> Epoch: 161
+2025-05-09 04:55:32,475	config	INFO	====> Epoch: 162
+2025-05-09 04:55:33,259	config	INFO	====> Epoch: 163
+2025-05-09 04:55:34,043	config	INFO	====> Epoch: 164
+2025-05-09 04:55:34,817	config	INFO	====> Epoch: 165
+2025-05-09 04:55:35,556	config	INFO	====> Epoch: 166
+2025-05-09 04:55:36,262	config	INFO	====> Epoch: 167
+2025-05-09 04:55:37,016	config	INFO	====> Epoch: 168
+2025-05-09 04:55:37,762	config	INFO	====> Epoch: 169
+2025-05-09 04:55:38,476	config	INFO	====> Epoch: 170
+2025-05-09 04:55:39,171	config	INFO	====> Epoch: 171
+2025-05-09 04:55:39,837	config	INFO	====> Epoch: 172
+2025-05-09 04:55:40,487	config	INFO	====> Epoch: 173
+2025-05-09 04:55:41,178	config	INFO	====> Epoch: 174
+2025-05-09 04:55:41,858	config	INFO	====> Epoch: 175
+2025-05-09 04:55:42,550	config	INFO	====> Epoch: 176
+2025-05-09 04:55:43,248	config	INFO	====> Epoch: 177
+2025-05-09 04:55:43,953	config	INFO	====> Epoch: 178
+2025-05-09 04:55:44,626	config	INFO	====> Epoch: 179
+2025-05-09 04:55:45,270	config	INFO	====> Epoch: 180
+2025-05-09 04:55:45,967	config	INFO	====> Epoch: 181
+2025-05-09 04:55:46,660	config	INFO	====> Epoch: 182
+2025-05-09 04:55:47,355	config	INFO	====> Epoch: 183
+2025-05-09 04:55:48,050	config	INFO	====> Epoch: 184
+2025-05-09 04:55:48,760	config	INFO	====> Epoch: 185
+2025-05-09 04:55:49,478	config	INFO	====> Epoch: 186
+2025-05-09 04:55:50,231	config	INFO	====> Epoch: 187
+2025-05-09 04:55:50,919	config	INFO	====> Epoch: 188
+2025-05-09 04:55:51,601	config	INFO	====> Epoch: 189
+2025-05-09 04:55:52,307	config	INFO	====> Epoch: 190
+2025-05-09 04:55:53,002	config	INFO	====> Epoch: 191
+2025-05-09 04:55:53,676	config	INFO	====> Epoch: 192
+2025-05-09 04:55:54,376	config	INFO	====> Epoch: 193
+2025-05-09 04:55:55,054	config	INFO	====> Epoch: 194
+2025-05-09 04:55:55,754	config	INFO	====> Epoch: 195
+2025-05-09 04:55:56,461	config	INFO	====> Epoch: 196
+2025-05-09 04:55:57,155	config	INFO	====> Epoch: 197
+2025-05-09 04:55:57,850	config	INFO	====> Epoch: 198
+2025-05-09 04:55:58,584	config	INFO	====> Epoch: 199
+2025-05-09 04:55:59,249	config	INFO	====> Epoch: 200
+2025-05-09 04:55:59,932	config	INFO	Train Epoch: 201 [0%]
+2025-05-09 04:55:59,932	config	INFO	[2.224459648132324, 3.0598649978637695, 12.47289752960205, 21.579811096191406, 2.551025152206421, 1.9796680212020874, 200, 0.0002925925163942316]
+2025-05-09 04:56:00,434	config	INFO	====> Epoch: 201
+2025-05-09 04:56:01,147	config	INFO	====> Epoch: 202
+2025-05-09 04:56:01,840	config	INFO	====> Epoch: 203
+2025-05-09 04:56:02,552	config	INFO	====> Epoch: 204
+2025-05-09 04:56:03,286	config	INFO	====> Epoch: 205
+2025-05-09 04:56:03,995	config	INFO	====> Epoch: 206
+2025-05-09 04:56:04,692	config	INFO	====> Epoch: 207
+2025-05-09 04:56:05,269	config	INFO	====> Epoch: 208
+2025-05-09 04:56:05,955	config	INFO	====> Epoch: 209
+2025-05-09 04:56:06,654	config	INFO	====> Epoch: 210
+2025-05-09 04:56:07,325	config	INFO	====> Epoch: 211
+2025-05-09 04:56:08,051	config	INFO	====> Epoch: 212
+2025-05-09 04:56:08,738	config	INFO	====> Epoch: 213
+2025-05-09 04:56:09,418	config	INFO	====> Epoch: 214
+2025-05-09 04:56:10,115	config	INFO	====> Epoch: 215
+2025-05-09 04:56:10,797	config	INFO	====> Epoch: 216
+2025-05-09 04:56:11,472	config	INFO	====> Epoch: 217
+2025-05-09 04:56:12,168	config	INFO	====> Epoch: 218
+2025-05-09 04:56:12,885	config	INFO	====> Epoch: 219
+2025-05-09 04:56:13,574	config	INFO	====> Epoch: 220
+2025-05-09 04:56:14,234	config	INFO	====> Epoch: 221
+2025-05-09 04:56:14,910	config	INFO	====> Epoch: 222
+2025-05-09 04:56:15,585	config	INFO	====> Epoch: 223
+2025-05-09 04:56:16,278	config	INFO	====> Epoch: 224
+2025-05-09 04:56:16,968	config	INFO	====> Epoch: 225
+2025-05-09 04:56:17,642	config	INFO	====> Epoch: 226
+2025-05-09 04:56:18,352	config	INFO	====> Epoch: 227
+2025-05-09 04:56:19,064	config	INFO	====> Epoch: 228
+2025-05-09 04:56:19,793	config	INFO	====> Epoch: 229
+2025-05-09 04:56:20,489	config	INFO	====> Epoch: 230
+2025-05-09 04:56:21,180	config	INFO	====> Epoch: 231
+2025-05-09 04:56:21,879	config	INFO	====> Epoch: 232

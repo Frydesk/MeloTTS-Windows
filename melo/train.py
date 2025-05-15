@@ -52,6 +52,33 @@ def run():
     writer = SummaryWriter(log_dir=hps.model_dir)
     writer_eval = SummaryWriter(log_dir=os.path.join(hps.model_dir, "eval"))
 
+    # Normalize file paths for Windows compatibility
+    training_files = os.path.normpath(hps.data.training_files)
+    validation_files = os.path.normpath(hps.data.validation_files)
+    
+    logger.info(f"Training files path: {training_files}")
+    logger.info(f"Validation files path: {validation_files}")
+    logger.info(f"Current working directory: {os.getcwd()}")
+    
+    # Ensure these files exist
+    if not os.path.exists(training_files):
+        logger.error(f"Training file list does not exist: {training_files}")
+        possible_path = os.path.join(os.getcwd(), training_files)
+        if os.path.exists(possible_path):
+            training_files = possible_path
+            logger.info(f"Found training files at: {training_files}")
+    
+    if not os.path.exists(validation_files):
+        logger.error(f"Validation file list does not exist: {validation_files}")
+        possible_path = os.path.join(os.getcwd(), validation_files)
+        if os.path.exists(possible_path):
+            validation_files = possible_path
+            logger.info(f"Found validation files at: {validation_files}")
+
+    # Update paths in hparams
+    hps.data.training_files = training_files
+    hps.data.validation_files = validation_files
+
     train_dataset = TextAudioSpeakerLoader(hps.data.training_files, hps.data)
     collate_fn = TextAudioSpeakerCollate()
     train_loader = DataLoader(

@@ -70,7 +70,33 @@ class TextAudioSpeakerLoader(torch.utils.data.Dataset):
             except:
                 print(item)
                 raise
-            audiopath = f"{_id}"
+            # Convert path separators to OS-specific format
+            audiopath = os.path.normpath(_id)
+            if not os.path.exists(audiopath):
+                # If direct path doesn't exist, try looking for the file relative to the current directory
+                # and also try adding melo/ prefix for files in data/ directory
+                possible_paths = [
+                    audiopath,
+                    os.path.join(os.getcwd(), audiopath),
+                    os.path.normpath(os.path.join(os.getcwd(), _id.replace('/', '\\'))),
+                    # Add melo/ prefix if the path starts with data/
+                    os.path.normpath('melo/' + _id) if _id.startswith('data/') else None,
+                    os.path.join(os.getcwd(), 'melo', _id.replace('/', '\\')),
+                ]
+                
+                # Filter out None values
+                possible_paths = [p for p in possible_paths if p]
+                
+                for path in possible_paths:
+                    if os.path.exists(path):
+                        audiopath = path
+                        break
+                else:
+                    logger.warning(f"Audio file not found: {_id}")
+                    logger.warning(f"Tried paths: {possible_paths}")
+                    skipped += 1
+                    continue
+                    
             if self.min_text_len <= len(phones) and len(phones) <= self.max_text_len:
                 phones = phones.split(" ")
                 tone = [int(i) for i in tone.split(" ")]
@@ -78,9 +104,18 @@ class TextAudioSpeakerLoader(torch.utils.data.Dataset):
                 audiopaths_sid_text_new.append(
                     [audiopath, spk, language, text, phones, tone, word2ph]
                 )
-                lengths.append(os.path.getsize(audiopath) // (2 * self.hop_length))
+                try:
+                    lengths.append(os.path.getsize(audiopath) // (2 * self.hop_length))
+                except Exception as e:
+                    logger.error(f"Error getting file size for {audiopath}: {e}")
+                    skipped += 1
             else:
                 skipped += 1
+                
+        if not lengths:
+            logger.error("No valid audio files found! Check your file paths and data format.")
+            raise ValueError("No valid audio files found in the dataset")
+            
         logger.info(f'min: {min(lengths)}; max: {max(lengths)}' )
         logger.info(
             "skipped: "
